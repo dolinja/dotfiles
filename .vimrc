@@ -22,7 +22,6 @@ syntax on
 filetype plugin indent on
 set mouse=a
 set clipboard=unnamed
-set t_Co=256
 
 if has ("mouse_sgr")
   set ttymouse=sgr
@@ -50,7 +49,7 @@ map <Leader>q :BD<CR>
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='kolor'
+let g:airline_theme='angr'
 set laststatus=2
 set encoding=utf-8
 
@@ -87,7 +86,5 @@ set list listchars=tab:»·,trail:·
 " Bufexplorer
 """""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>l :ToggleBufExplorer<CR>
-colorscheme atom-dark-256
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-
+set t_Co=256
+colorscheme one
